@@ -40,7 +40,7 @@ export default function Auth() {
           placeholder="Your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="border-2 border-gray-400 p-2 w-full rounded-lg outline-none focus:border-gray-600"
+          className="border-2 border-gray-400 p-2 text-black w-full rounded-lg outline-none focus:border-gray-600"
         />
       </div>
       <div>
