@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { supabase } from "../utils/supabaseClient";
+import Head from "next/head";
 
 export default function Auth() {
   const [loading, setLoading] = useState(false);
@@ -26,6 +27,9 @@ export default function Auth() {
 
   return (
     <div className="flex w-screen h-screen space-y-3 bg-black text-white items-center justify-center flex-col text-lg">
+      <Head>
+        <title>Sign in</title>
+      </Head>
       <h1 className="text-3xl font-semibold">Supabase + Next.js</h1>
       <p className="italic text-xl font-medium">
         Sign in via magic link with your email below
